@@ -23,8 +23,8 @@ var textHandler = function(n) {
 		A.appendChild(NodeRef);
 		SongName = A.innerText;
 		SongReference = SongName.replace(SongName,'https://'+base+'/RadioAndMusicPlayer/media/'+SongName+'.mp3').replace(/&/mi,'_and_');
-		//A.setAttribute('href', './index.html?mp3=' + SongReference);
-		A.setAttribute('href', 'https://'+base+'/mp3player/?mp3=' + SongReference);
+		A.setAttribute('href', './index.html?mp3=' + SongReference);
+		//A.setAttribute('href', 'https://'+base+'/mp3player/?mp3=' + SongReference);
 		A.setAttribute('title', 'Click to Play: ' + SongName);
 		A["innerHTML"]  = SongName
 		return A;

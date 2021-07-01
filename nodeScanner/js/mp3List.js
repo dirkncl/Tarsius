@@ -42,7 +42,7 @@ var listMp3 = {
   "Theo Vaness - I Go My Own Way":"https://dirkncl.github.io/RadioAndMusicPlayer/media/Theo Vaness - I Go My Own Way.mp3",
   "Tumbleweeds - Somewhere Between":"https://dirkncl.github.io/RadioAndMusicPlayer/media/Tumbleweeds - Somewhere Between.mp3",
   "Vengaboys - Your Place Or Mine":"https://dirkncl.github.io/RadioAndMusicPlayer/media/Vengaboys - Your Place Or Mine.mp3",
-  "Tantowi Yahya/Tantowi Yahya & Pinky Warow - You're My Kind Of Woman, My Kind Of Man (Vince Gill)":"https://dirkncl.github.io/RadioAndMusicPlayer/media/Tantowi Yahya/Tantowi Yahya & Pinky Warow - You're My Kind of Woman, My Kind of Man (Vince Gill).mp3",
+  "Tantowi Yahya/Tantowi Yahya & Pinky Warow - You're My Kind of Woman, My Kind of Man (Vince Gill)":"https://dirkncl.github.io/RadioAndMusicPlayer/media/Tantowi Yahya/Tantowi Yahya & Pinky Warow - You're My Kind of Woman, My Kind of Man (Vince Gill).mp3",
   "Tantowi Yahya/Tantowi Yahya - Balada Pelaut":"https://dirkncl.github.io/RadioAndMusicPlayer/media/Tantowi Yahya/Tantowi Yahya - Balada Pelaut.mp3",
   "Tantowi Yahya/Tantowi Yahya - Biar Jo":"https://dirkncl.github.io/RadioAndMusicPlayer/media/Tantowi Yahya/Tantowi Yahya - Biar Jo.mp3",
   "Tantowi Yahya/Tantowi Yahya - Hidupku Sunyi, Charles Hutagalung":"https://dirkncl.github.io/RadioAndMusicPlayer/media/Tantowi Yahya/Tantowi Yahya - Hidupku Sunyi, Charles Hutagalung.mp3",
@@ -59,3 +59,5 @@ var listMp3 = {
   "Tantowi Yahya/Tantowi Yahya - The Heart That You Own, Dwighyt Yoakam":"https://dirkncl.github.io/RadioAndMusicPlayer/media/Tantowi Yahya/Tantowi Yahya - The Heart that You Own, Dwighyt Yoakam.mp3",
   "Tantowi Yahya/Tantowi Yahya Dan Mark Alan - Love Is Desire, Mark Alan Thread Gill":"https://dirkncl.github.io/RadioAndMusicPlayer/media/Tantowi Yahya/Tantowi Yahya dan Mark Alan - Love is desire, Mark Alan Thread Gill.mp3"
 }
+
+
