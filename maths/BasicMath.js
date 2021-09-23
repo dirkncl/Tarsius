@@ -101,3 +101,14 @@ function Ln(x, n) {
   for(var i = 1; i <= n; i++) { func += (((x - 1) / (x + 1))**((i * 2) - 1)) / ((i * 2) - 1) }
   return 2 * func
 }
+
+/* ******************************************************************
+ * Log  base 10 or base n logarithm
+ * Dirk Levinus Nicolaas
+ * 23 Sept. 2021
+ * Minahasa-Utara (Sulawesi Utara) - Indonesia
+ ****************************************************************** */  
+function Log(x, base) {
+  base = base || 10
+  return (Ln(x) / Ln(base));
+}
