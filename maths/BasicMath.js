@@ -66,7 +66,7 @@ function Sin(x, n) {
   return func(x, n)
 }
 //console.log("Math.sin(0.5) = " + Math.sin(0.5));
-//console.log("Sine(0.5) = " + Sin(0.5));
+//console.log("     Sin(0.5) = " + Sin(0.5));
 
 /* ******************************************************************
  * Cosn -->Cos()
