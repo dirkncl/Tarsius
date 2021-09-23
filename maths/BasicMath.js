@@ -88,3 +88,16 @@ function Cos(x, n){
 }
 //console.log("Math.cos(0.5) = " + Math.cos(0.5));
 //console.log("     Cos(0.5) = " + Cos(0.5));
+
+/* ******************************************************************
+ * Ln  Natural Logarithm 
+ * Dirk Levinus Nicolaas
+ * 23 Sept. 2021
+ * Minahasa-Utara (Sulawesi Utara) - Indonesia
+ ****************************************************************** */  
+function Ln(x, n) {
+  n = n || 1000
+  var func = 0;
+  for(var i = 1; i <= n; i++) { func += (((x - 1) / (x + 1))**((i * 2) - 1)) / ((i * 2) - 1) }
+  return 2 * func
+}
