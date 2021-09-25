@@ -55,7 +55,8 @@ function Exp(x, n){
  ****************************************************************** */  
 function Sin(x, n) {
   //equiv Math.sin
-	n = n || 7
+  n = n || 87
+  x = x % (360 * 3.14159265358979323846/180)	
   var fnc = ''
  	for (var i=1; i<=n; i++) {
 		fnc +=' + '+ '(term = (('+i+'*2)+1), (('+i+' & 0x01)? -1 : +1) * ((a^term)/term!))';
@@ -77,6 +78,7 @@ function Sin(x, n) {
 function Cos(x, n){
   //equiv Math.cos
   n = n || 7
+  x = x % (360 * 3.14159265358979323846/180)	
   var fnc = ''
   for (var i=1; i<=n; i++) {
 		fnc +=' + '+ '(term = '+i+'*2, (('+i+' & 0x01)? -1 : +1) * ((a^term)/term!))';
@@ -97,6 +99,9 @@ function Cos(x, n){
  ****************************************************************** */  
 function Ln(x, n) {
   n = n || 1000
+  if( x === 0.0 ) return Number.NEGATIVE_INFINITY
+  if( x !== x || x < 0.0 ) return NaN
+
   var func = 0;
   for(var i = 1; i <= n; i++) { func += (((x - 1) / (x + 1))**((i * 2) - 1)) / ((i * 2) - 1) }
   return 2 * func
