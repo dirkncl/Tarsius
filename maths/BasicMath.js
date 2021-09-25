@@ -117,3 +117,42 @@ function Log(x, base) {
   base = base || 10
   return (Ln(x) / Ln(base));
 }
+
+/* ******************************************************************
+ * Ceil - round-up
+ * Dirk Levinus Nicolaas
+ * 26 Sept. 2021
+ * Minahasa-Utara (Sulawesi Utara) - Indonesia
+ ****************************************************************** */
+Ceil(n, dec){
+  dec = dec||0
+  dec = dec<0?0:dec
+  var sLeft = (n+"").split(".")[0]
+  var sRight = (n+"").split(".")[1]
+  if(dec>sRight.length) dec = sRight.length
+  var Right = sRight.substr(0,dec)
+  var RightPlus1 = sRight.substring(dec,dec+1)
+  if((dec===0) && +RightPlus1>=5){ sLeft = (+sLeft + 1) +"" }
+  if((dec>0) && +RightPlus1>=5){ Right = (+Right + 1) +"" }
+  var res = sLeft+"."+Right
+  return +res
+}
+  
+/* ******************************************************************
+ * Floor - round-down
+ * Dirk Levinus Nicolaas
+ * 26 Sept. 2021
+ * Minahasa-Utara (Sulawesi Utara) - Indonesia
+ ****************************************************************** */
+
+Floor(n, dec){
+  dec = dec||0
+  dec = dec<0?0:dec
+  var sLeft = (n+"").split(".")[0]
+  var sRight = (n+"").split(".")[1]
+  if(dec>sRight.length) dec = sRight.length
+  var Right = sRight.substr(0,dec)
+  var res = sLeft+"."+Right
+  return +res
+}
+
