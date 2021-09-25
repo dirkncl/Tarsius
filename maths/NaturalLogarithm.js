@@ -12,7 +12,7 @@ function Natural() {
       
       var fh = function (n) { var float64 = new Float64Array(1);var uint32 = new Uint32Array(float64.buffer);float64[0] = n;return uint32[le() === true?1:0]}
       
-      var make_high = function (n, high) {var float64 = new Float64Array(1);var uint32 = new Uint32Array(float64.buffer);float64[0] = n;uint32[le() === true?1:0] = (high >>> 0);return float64[0]};
+      var mh = function (n, high) {var float64 = new Float64Array(1);var uint32 = new Uint32Array(float64.buffer);float64[0] = n;uint32[le() === true?1:0] = (high >>> 0);return float64[0]};
       var LN = {n:{h: '6.93147180369123816490e-01',l: '1.90821492927058770002e-10'},1: '0.6666666666666735',2: '0.3999999999940942',3: '0.2857142874366239',4: '0.22222198432149784',5: '0.1818357216161805',6: '0.15313837699209373',7: '0.14798198605116586'}
   
       var Lnh = +LN["n"]["h"], Lnl = +LN["n"]["l"], M = 0, O = Lnh, T = Lnl
@@ -37,7 +37,7 @@ function Natural() {
       ht &= 0x000fffff|0;
       hx = ( (ht + 0x95f64) & 0x100000 )|0;
       
-      x = make_high( x, ht|(hx^(0x3ff00000|0)) );
+      x = mh( x, ht|(hx^(0x3ff00000|0)) );
       
       L += ( hx>>20 )|0;
       A = x - 1.0;
