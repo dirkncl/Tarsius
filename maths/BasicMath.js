@@ -124,7 +124,7 @@ function Log(x, base) {
  * 26 Sept. 2021
  * Minahasa-Utara (Sulawesi Utara) - Indonesia
  ****************************************************************** */
-Ceil(n, dec){
+function Ceil(n, dec){
   dec = dec||0
   dec = dec<0?0:dec
   var sLeft = (n+"").split(".")[0]
@@ -145,7 +145,7 @@ Ceil(n, dec){
  * Minahasa-Utara (Sulawesi Utara) - Indonesia
  ****************************************************************** */
 
-Floor(n, dec){
+function Floor(n, dec){
   dec = dec||0
   dec = dec<0?0:dec
   var sLeft = (n+"").split(".")[0]
