@@ -129,7 +129,7 @@ function Ceil(n, dec){
   dec = dec<0?0:dec
   var sLeft = (n+"").split(".")[0]
   var sRight = (n+"").split(".")[1]
-  if(sRight === undefined){ return n }
+  if(sLeft === undefined || sRight === undefined){ return n }
   if(dec>sRight.length) dec = sRight.length
   var Right = sRight.substr(0,dec)
   var RightPlus1 = sRight.substring(dec,dec+1)
@@ -151,7 +151,7 @@ function Floor(n, dec){
   dec = dec<0?0:dec
   var sLeft = (n+"").split(".")[0]
   var sRight = (n+"").split(".")[1]
-  if(sRight === undefined){ return n }
+  if(sLeft === undefined || sRight === undefined){ return n }
   if(dec>sRight.length) dec = sRight.length
   var Right = sRight.substr(0,dec)
   var res = sLeft+"."+Right
